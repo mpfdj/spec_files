@@ -66,3 +66,32 @@ hello.sh
 # Customize rpmlint. Create below file and add filter
 /root/.config/rpmlint
 addFilter('invalid-url Source')
+
+
+
+
+#----------------------------------
+# Build rpmlint from sources
+# rpmlint is implemented in Python
+#----------------------------------
+https://koji.fedoraproject.org/koji/packageinfo?packageID=3748
+Check logs (build.log) on Koji build server
+Check releases on https://github.com/rpm-software-management/rpmlint/tags or check sources on https://src.fedoraproject.org/rpms/rpmlint or https://github.com/rpm-software-management/rpmlint/tree/main/.packit
+
+
+# Skip tests and no dependencies
+rpmbuild -ba --noprep --noclean --target noarch --nocheck --nodeps rpmlint.spec
+rpmbuild -ba --noprep --noclean --target noarch --nocheck rpmlint.spec
+
+
+# Install pip packages to target directory using a specific python version
+python3.12 -m pip install --target /usr/lib/python3.12/site-packages packaging pybeam pyenchant python-magic pyxdg rpm zstandard tomli-w
+
+
+# Packaging Python 3 RPMs
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/installing_and_using_dynamic_programming_languages/assembly_packaging-python-3-rpms_installing-and-using-dynamic-programming-languages
+https://docs.fedoraproject.org/en-US/packaging-guidelines/Python/
+
+
+# Some resources on Macros
+https://rpm-software-management.github.io/rpm/manual/macros.html
