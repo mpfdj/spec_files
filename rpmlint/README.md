@@ -33,7 +33,7 @@ dos2unix ~/rpmbuild/SPECS/rpmlint.spec
 
 
 # Build the rpm
-rpmbuild -ba --noprep --noclean --target noarch --nocheck -vv rpmlint.spec
+rpmbuild -ba --target noarch --nocheck -vv rpmlint.spec
 
 
 # Install rpm
@@ -48,3 +48,14 @@ python3.12 -m pip install --target /usr/lib/python3.12/site-packages file-magic 
 # Run rpmlint
 cd /root/rpmbuild/SPECS
 rpmlint rpmlint.spec
+
+
+
+#----------------------------
+# rpmlint-2.spec
+#----------------------------
+yum install hunspell
+
+
+# How to check RPM package dependencies on Fedora, CentOS or RHEL
+https://www.xmodulo.com/check-rpm-package-dependencies-fedora-centos-rhel.html
