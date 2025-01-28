@@ -5,6 +5,8 @@ https://github.com/redhat-developer/rpm-packaging-guide/blob/master/source/hello
 
 https://www.redhat.com/en/blog/create-rpm-package
 
+https://rpm-packaging-guide.github.io/
+
 https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/packaging_and_distributing_software/index
 https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/packaging_and_distributing_software/packaging-software_packaging-and-distributing-software#assembly_what-a-spec-file-is_packaging-software
 
@@ -95,6 +97,10 @@ https://docs.fedoraproject.org/en-US/packaging-guidelines/Python/
 
 # Some resources on Macros
 https://rpm-software-management.github.io/rpm/manual/macros.html
+
+
+# Some resources on scriptlets
+https://docs.fedoraproject.org/en-US/packaging-guidelines/Scriptlets/
 
 
 # rpmbuild Command Reference
