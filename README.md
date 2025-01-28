@@ -97,4 +97,6 @@ https://docs.fedoraproject.org/en-US/packaging-guidelines/Python/
 https://rpm-software-management.github.io/rpm/manual/macros.html
 
 
+# rpmbuild Command Reference
 http://ftp.rpm.org/max-rpm/ch-rpm-b-command.html
+http://ftp.rpm.org/max-rpm/
